@@ -1,5 +1,5 @@
 resource "aws_iam_role" "this" {
-  name = "instance_${var.application_name}"
+  name = var.application_name
 
   assume_role_policy = <<EOF
 {
@@ -64,6 +64,6 @@ resource "aws_iam_role_policy" "codebuild" {
 }
 
 resource "aws_iam_instance_profile" "this" {
-  name = "instance_${var.application_name}_profile"
+  name = var.application_name
   role = aws_iam_role.this.name
 }

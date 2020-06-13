@@ -5,7 +5,7 @@ resource "aws_instance" "public1" {
   # this is optional, but needed if you want to ssh into your ec2 instance
   # here I have manually created a key pair in the console and I'm supplying the
   # name.
-  key_name = "ha_webserver"
+  #key_name = "ha_webserver"
 
   user_data = file("${path.module}/webserver_install.sh")
 

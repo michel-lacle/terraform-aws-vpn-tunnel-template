@@ -2,3 +2,6 @@
 .DS_Store
 *.pem
 notes.txt
+.terraform/**
+*.tfstate*
+.terraform.*

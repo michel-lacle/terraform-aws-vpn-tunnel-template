@@ -4,15 +4,7 @@
 #
 variable "application_name" {
   type = string
-  default = "cool_webapp"
-}
-
-#
-# the name of the codecommit repo where our appliation lives
-#
-variable "application_code_reponame" {
-  type = string
-  default = "cool_webapp"
+  default = "vpn-tunnel"
 }
 
 #
@@ -43,12 +35,5 @@ variable "webserver_domain_zone" {
 
 variable "webserver_domain" {
   type = string
-  default = "aws-meetup-cicd.f1kart.com"
-}
-
-#
-# slack webhook where we get the build notifications
-#
-variable "slack_url" {
-  type = string
+  default = "isabela.f1kart.com"
 }
